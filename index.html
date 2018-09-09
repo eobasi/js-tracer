@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>JS Tracer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class='content'>
+        <div class='controllers'>
+            <h3>Customize Tracer Colors</h3>
+            <div class='item bg-controllers'>
+                Background: <button onclick='toggleBgColor("gray")' class='gray btn'>Gray</button>
+                <button onclick='toggleBgColor("yellow")' class='yellow btn'>Yellow</button>
+                <button onclick='toggleBgColor("green")' class='green btn'>Green</button>
+                <input type='color' id='toggleBgColor' />
+            </div>
+            <div class='item bg-controllers'>
+                Text Color: <button onclick='toggleTextColor("white")' class='white btn'>White</button>
+                <button onclick='toggleTextColor("black")' class='black btn'>Black</button>
+                <button onclick='toggleTextColor("green")' class='green btn'>Green</button>
+                <input type='color' id='toggleTextColor' />
+            </div>
+            <h3>Re-size Tracer</h3>
+            <div class='item width-controllers'>
+                Width: <button onclick='resizeWidth("+")'>+</button>
+                <button onclick='resizeWidth("-")'>-</button>
+                <input type='number' id='widthInput' />px
+            </div>
+            <div class='item height-controllers'>
+                Height: <button onclick='resizeHeight("+")'>+</button>
+                <button onclick='resizeHeight("-")'>-</button>
+                <input type='number' id='heightInput' />px
+            </div>
+            <h3>Move Tracer</h3>
+            <p class='info'>Simply drag the tracer box to move it around the page or adjust the position manually with this tool.</p>
+            <div class="item pos-controllers">
+                x-position: <input type='number' id='x-position' />px
+            </div>
+            <div class="item pos-controllers">
+                y-position: <input type='number' id='y-position' />px
+            </div>
+            <h3>Tracer Text</h3>
+            <div class='item text-controller'>
+                <textarea id='textEditor' placeholder="Enter some fancy text"></textarea>
+            </div>
+        </div>
+        <div id='tracerBox' style='width:200px;height:200px' class='tracerBox'></div>
+    </div>
+</body>
+</html>
