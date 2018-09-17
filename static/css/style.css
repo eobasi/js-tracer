@@ -1,0 +1,78 @@
+body{
+    background-color: #f7f7f7;
+    color: #333;
+}
+#tracerBox{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: gray;
+    padding: 20px;
+    font-size: 20px;
+    z-index: -999;
+    cursor: -webkit-grab;
+}
+#tracerBox:focus{
+    cursor: -webkit-grabbing;
+}
+.controllers{
+    float: right;
+    max-width: 300px;
+}
+.controllers .item{
+    margin: 5px 0px;
+}
+#textEditor{
+    width: 98%;
+    min-height: 80px;
+}
+#soundPlayer{
+    display: none;
+}
+#toggleSound{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-image: url(../img/chat_btn_sound.png);
+    background-repeat: no-repeat;
+    cursor: pointer;
+    border: solid 1px transparent;
+}
+#toggleSound:hover{
+    border-color: #ddd;
+}
+.sound-on{
+    background-position: 0px 0px;
+}
+.sound-off{
+    background-position: 0px -20px;
+}
+.btn {
+    font-size: 0px;
+    display: inline-block;
+    border: none;
+    width: 16px;
+    height: 16px;
+    vertical-align: text-top;
+    background-color: purple;
+}
+.white{
+    background-color: white;
+    color: black;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.black{
+    background-color: black;
+    color: white;
+}
+.yellow{
+    background-color: yellow;
+    color: black;
+}
+.gray{
+    background-color: gray;
+    color: black;
+}
